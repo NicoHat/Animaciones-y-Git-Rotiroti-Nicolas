@@ -1,0 +1,654 @@
+/* Grid y CSS de Index */
+/*Media query mobile Index */
+@media only screen and (min-width: 0px) and (max-width: 1023px) {
+	body {
+		background-color: lightcyan;
+	}
+	.contenedorPadre-Index{
+		display: grid;
+		grid-template-areas:
+		"logo-grid nav-grid"
+		"h3-grid promocion-grid"
+		"ubicacion-grid mapa-grid" 
+		"footer-grid footer-grid";
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto auto auto auto;
+	}
+	.logo-grid {
+		grid-area: logo-grid;
+		display: flex;
+		justify-content: center;
+	
+	}
+	.nav-grid {
+		grid-area: nav-grid;
+	
+	}
+	.promocion-grid {
+		grid-area: promocion-grid;
+		display: flex;
+		justify-content: safe center;
+	
+	}
+	.h3-grid {
+		grid-area: h3-grid;
+		font-style: italic;
+		font-size: 30px;
+		color: darkred;
+	
+	}
+	.ubicacion-grid {
+		grid-area: ubicacion-grid;
+		display: flex;
+		justify-content: center;
+	
+		font-size: 40px;
+		padding: 20px;
+	}
+	.mapa-grid {
+		grid-area: mapa-grid;
+	
+	}
+	.footer-grid {
+		grid-area: footer-grid;
+	
+		padding: 20px 0;
+	}
+
+	.navIndex {
+		display: inline-flex;
+		font-size: 40px;
+		justify-self: center;
+		font-style: italic;
+		margin: 10px;
+
+	}
+	.promocionIndex {
+		display: inline-flex;
+		font-family: cursive;
+		color: darkred;
+		font-size: 25px;
+		margin: 20px;
+		padding: 10px;
+	}
+	.footerIndex {
+		display: flex;
+		justify-content: center;
+		font-style: italic;
+		color: darkred;
+	}
+}
+/*Media query desktop Index*/
+@media only screen and (min-width: 1024px) {
+	body {
+		background-color: lightsalmon;
+	}
+	.contenedorPadre-Index{
+		display: grid;
+		grid-template-areas:
+		"logo-grid nav-grid"
+		"h3-grid promocion-grid"
+		"ubicacion-grid mapa-grid" 
+		"footer-grid footer-grid";
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto auto auto auto;
+	}
+	.logo-grid {
+		grid-area: logo-grid;
+		display: flex;
+		justify-content: center;
+		background-color: lightsalmon;
+	}
+	.nav-grid {
+		grid-area: nav-grid;
+		background-color: lightsalmon;
+	}
+	.promocion-grid {
+		grid-area: promocion-grid;
+		display: flex;
+		justify-content: safe center;
+		background: lightsalmon;
+	}
+	.h3-grid {
+		grid-area: h3-grid;
+		font-style: italic;
+		font-size: 30px;
+		color: darkred;
+		background-color: lightsalmon;
+	}
+	.ubicacion-grid {
+		grid-area: ubicacion-grid;
+		display: flex;
+		justify-content: center;
+		background-color: lightsalmon;
+		font-size: 40px;
+		padding: 20px;
+	}
+	.mapa-grid {
+		grid-area: mapa-grid;
+		background-color: lightsalmon;
+	}
+	.footer-grid {
+		grid-area: footer-grid;
+		background-color: lightsalmon;
+		padding: 20px 0;
+	}
+
+	.navIndex {
+		display: inline-flex;
+		font-size: 40px;
+		justify-self: center;
+		font-style: italic;
+		margin: 10px;
+
+	}
+	.promocionIndex {
+		display: inline-flex;
+		font-family: cursive;
+		color: darkred;
+		font-size: 25px;
+		margin: 20px;
+		padding: 10px;
+	}
+	.footerIndex {
+		display: flex;
+		justify-content: center;
+		font-style: italic;
+		color: darkred;
+	}
+}
+/* Grid y CSS de productos */
+/* Media query mobile productos */
+@media only screen and (min-width: 0px) and (max-width: 1023px) {
+	body {
+		background-color: lightcyan;
+	}
+	.contenedorPadre-Productos {
+		display: grid;
+		grid-template-areas:
+		"logoProductos-grid navProductos-grid"
+		"productos-grid tablaProductos-grid"
+		"footerProductos-grid footerProductos-grid" ;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto auto auto;
+	}
+
+	.logoProductos-grid {
+		grid-area: logoProductos-grid;
+		display: flex;
+		justify-content: center;
+	}
+	.navProductos-grid {
+		grid-area: navProductos-grid;
+
+	}
+	.productos-grid {
+		grid-area: productos-grid;
+		display: flex;
+		justify-content: center;
+		font-size: 40px;
+		font-style: italic ;
+		color: darkred;
+	}
+	.tablaProductos-grid {
+		grid-area: tablaProductos-grid;
+	}
+	.footerProductos-grid {
+		grid-area: footerProductos-grid;
+		justify-content: center;
+		font-style: italic;
+		color: darkred;
+	}
+	.navProductos {
+		display: inline-flex;
+		font-size: 40px;
+		justify-self: center;
+		font-style: italic;
+		margin: 10px;
+	}
+	.tablaProductos {
+		font-family: Sans-Serif;
+		font-weight: bold;	
+    	font-size: 20px;
+    	margin: 10px;
+    	padding: 50px;
+    	width: 400px;
+    	text-align: left;
+    	border-collapse: collapse;
+    	border-spacing: 200px;
+    	background: lightcyan;
+    	border-color: black;
+	}
+	.footerProductos {
+		display: flex;
+		justify-content: center;
+		font-style: italic;
+		color: darkred;
+	}
+
+}
+/*Media query desktop productos */
+@media only screen and (min-width: 1024px) and (max-width: 2000px) {
+	body {
+		background-color: lightsalmon;
+	}
+	.contenedorPadre-Productos {
+		display: grid;
+		grid-template-areas:
+		"logoProductos-grid navProductos-grid"
+		"productos-grid tablaProductos-grid"
+		"footerProductos-grid footerProductos-grid" ;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto auto auto;
+	}
+
+	.logoProductos-grid {
+		grid-area: logoProductos-grid;
+		display: flex;
+		justify-content: center;
+	}
+	.navProductos-grid {
+		grid-area: navProductos-grid;
+
+	}
+	.productos-grid {
+		grid-area: productos-grid;
+		display: flex;
+		justify-content: center;
+		font-size: 40px;
+		font-style: italic ;
+		color: darkred;
+	}
+	.tablaProductos-grid {
+		grid-area: tablaProductos-grid;	
+	}
+	.footerProductos-grid {
+		grid-area: footerProductos-grid;
+		justify-content: center;
+		font-style: italic;
+		color: darkred;
+	}
+	.navProductos {
+		display: inline-flex;
+		font-size: 40px;
+		justify-self: center;
+		font-style: italic;
+		margin: 10px;
+	}
+	.tablaProductos {
+		font-family: Sans-Serif;
+		font-weight: bold;	
+    	font-size: 20px;
+    	margin: 10px;
+    	padding: 50px;
+    	width: 400px;
+    	text-align: left;
+    	border-collapse: collapse;
+    	border-spacing: 200px;
+    	background: lightcoral;
+    	border-color: black;
+	}
+	.footerProductos {
+		display: flex;
+		justify-content: center;
+		font-style: italic;
+		color: darkred;
+	}
+}
+
+/* Grid y CSS de promociones*/
+/* Media query mobile de promociones */
+@media only screen and (min-width: 0px) and (max-width: 1023px) {
+	body {
+		background-color: lightcyan;
+	}
+	.contenedorPadre-Promociones {
+		display: grid;
+		grid-template-areas:
+		"logoPromociones-grid navPromociones-grid"
+		"tituloPromociones-grid tablaPromociones-grid"
+		"footerPromociones-grid footerPromociones-grid";
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto auto auto;
+	}
+	.logoPromociones-grid {
+		grid-area: logoPromociones-grid;
+		display: flex;
+		justify-content: center;
+	}
+	.navPromociones-grid {
+		grid-area: navPromociones-grid;
+	}
+	.tituloPromociones-grid {
+		grid-area: tituloPromociones-grid;
+		display: flex;
+		justify-content: center;
+		font-size: 40px;
+		font-style: italic;
+		color: darkred;
+	}
+	.tablaPromociones-grid {
+		grid-area: tablaPromociones-grid;
+	}
+	.footerPromociones-grid {
+		grid-area: footerPromociones-grid;
+	}
+	.nav__promociones{
+		display: inline-flex;
+		font-size: 40px;
+		justify-self: center;
+		font-style: italic;
+		margin: 10px;
+	}
+	.tablaPromociones{
+		font-family: Sans-Serif;	
+	    font-size: 20px;
+	    margin: 10px;
+	    padding: 50px;
+	    width: 400px;
+	    text-align: left;
+	    border-collapse: collapse;
+	    border-spacing: 200px;
+	    background: lightcyan;
+	    border-color: black;
+	}
+	.footerPromociones{
+		display: flex;
+		justify-content: center;
+		font-style: italic;
+		color: darkred;
+	}
+}
+
+/* Media query desktop de promociones */
+@media only screen and (min-width: 1024px) and (max-width: 2000px) {
+	body {
+		background-color: lightsalmon;
+	}
+	.contenedorPadre-Promociones {
+		display: grid;
+		grid-template-areas:
+		"logoPromociones-grid navPromociones-grid"
+		"tituloPromociones-grid tablaPromociones-grid"
+		"footerPromociones-grid footerPromociones-grid";
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto auto auto;
+	}
+	.logoPromociones-grid {
+		grid-area: logoPromociones-grid;
+		display: flex;
+		justify-content: center;
+	}
+	.navPromociones-grid {
+		grid-area: navPromociones-grid;
+	}
+	.tituloPromociones-grid {
+		grid-area: tituloPromociones-grid;
+		display: flex;
+		justify-content: center;
+		font-size: 40px;
+		font-style: italic;
+		color: darkred;
+	}
+	.tablaPromociones-grid {
+		grid-area: tablaPromociones-grid;
+	}
+	.footerPromociones-grid {
+		grid-area: footerPromociones-grid;
+	}
+	.nav__promociones{
+		display: inline-flex;
+		font-size: 40px;
+		justify-self: center;
+		font-style: italic;
+		margin: 10px;
+	}
+	.tablaPromociones{
+		font-family: Sans-Serif;	
+	    font-size: 20px;
+	    margin: 10px;
+	    padding: 50px;
+	    width: 400px;
+	    text-align: left;
+	    border-collapse: collapse;
+	    border-spacing: 200px;
+	    background: lightcoral;
+	    border-color: black;
+	}
+	.footerPromociones{
+		display: flex;
+		justify-content: center;
+		font-style: italic;
+		color: darkred;
+	}
+}	
+
+
+/* Grid y CSS de nosotros */
+/* Media query mobile de Nosotros */
+@media only screen and (min-width: 0px) and (max-width: 1023px) {
+	.contenedorPadre-Nosotros {
+		display: grid;
+		grid-template-areas:
+		"logoNosotros-grid navNosotros-grid"
+		"tituloNosotros-grid parrafoNosotros-grid"
+		"footerNosotros-grid footerNosotros-grid";
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto auto auto;
+	}
+	.logoNosotros-grid {
+		grid-area: logoNosotros-grid;
+		display: flex;
+		justify-content: center;
+	}
+	.navNosotros-grid {
+		grid-area: navNosotros-grid;
+	}
+	.tituloNosotros-grid {
+		grid-area: tituloNosotros-grid;
+		display: flex;
+		justify-content: center;
+		font-size: 40px;
+		font-style: italic;
+		color: darkred;
+	}
+	.parrafoNosotros-grid {
+		grid-area: parrafoNosotros-grid;
+	}
+	.footerNosotros-grid {
+		grid-area: footerNosotros-grid;
+	}
+	.nav__nosotros{
+		display: inline-flex;
+		font-size: 40px;
+		justify-content: center;
+		font-style: italic;
+		margin: 10px;
+	}
+	.parrafoNosotros{
+		display: flex;
+		justify-content: left;
+		font-size: 25px;
+		font-family: Arial, Helvetica, Sans-serif;
+	  	font-weight: bold; 
+	 	font-style: italic;
+	 	background-color: lightcyan;
+	 	color: darkred;
+	}
+	.footerNosotros {
+		display: flex;
+		justify-content: center;
+		font-style: italic;
+		color: darkred;
+	}
+}
+/* Media query desktop de Nosotros */
+@media only screen and (min-width: 1024px) {
+	.contenedorPadre-Nosotros {
+		display: grid;
+		grid-template-areas:
+		"logoNosotros-grid navNosotros-grid"
+		"tituloNosotros-grid parrafoNosotros-grid"
+		"footerNosotros-grid footerNosotros-grid";
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto auto auto;
+	}
+	.logoNosotros-grid {
+		grid-area: logoNosotros-grid;
+		display: flex;
+		justify-content: center;
+	}
+	.navNosotros-grid {
+		grid-area: navNosotros-grid;
+	}
+	.tituloNosotros-grid {
+		grid-area: tituloNosotros-grid;
+		display: flex;
+		justify-content: center;
+		font-size: 40px;
+		font-style: italic;
+		color: darkred;
+	}
+	.parrafoNosotros-grid {
+		grid-area: parrafoNosotros-grid;
+	}
+	.footerNosotros-grid {
+		grid-area: footerNosotros-grid;
+	}
+	.nav__nosotros{
+		display: inline-flex;
+		font-size: 40px;
+		justify-content: center;
+		font-style: italic;
+		margin: 10px;
+	}
+	.parrafoNosotros{
+		display: flex;
+		justify-content: left;
+		font-size: 25px;
+		font-family: Arial, Helvetica, Sans-serif;
+	  	font-weight: bold; 
+	 	font-style: italic;
+	 	background-color: lightsalmon;
+	 	color: darkred;
+	}
+	.footerNosotros {
+		display: flex;
+		justify-content: center;
+		font-style: italic;
+		color: darkred;
+	}
+}
+/* Grid y CSS de contacto */
+/* Media query mobile de Contacto */
+@media only screen and (min-width: 0px) and (max-width: 1023px){
+	.contenedorPadre-Contacto {
+		display: grid;
+		grid-template-areas:
+		"logoContacto-grid navContacto-grid"
+		"tituloContacto-grid tituloContacto-grid"
+		"imgContacto-grid imgContacto-grid"
+		"formContacto-grid formContacto-grid"
+		"footerContacto-grid footerContacto-grid";
+		grid-template-columns: 50% 50%;
+		grid-template-rows: auto auto auto auto auto;
+	}
+	.logoContacto-grid {
+		grid-area: logoContacto-grid;
+		display: flex;
+		justify-content: center;
+	}
+	.navContacto-grid {
+		grid-area: navContacto-grid;
+	}
+	.tituloContacto-grid {
+		grid-area: tituloContacto-grid;
+		display: flex;
+		justify-content: center;
+		font-size: 30px;
+		font-style: italic;
+		color: darkred;
+	}
+	.imgContacto-grid {
+		grid-area: imgContacto-grid;
+		display: flex;
+		justify-content: center;
+	}
+	.formContacto-grid {
+		grid-area: formContacto-grid;
+		display: flex;
+		justify-content: center;
+	}
+	.footerContacto-grid {
+		grid-area: footerContacto-grid;
+	}
+	.nav__contacto{
+		display: inline-flex;
+		font-size: 40px;
+		justify-content: center;
+		font-style: italic;
+		margin: 10px;
+	}
+	.footerContacto{
+		display: flex;
+		justify-content: center;
+		font-style: italic;
+		color: darkred;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.contenedorPadre-Contacto {
+		display: grid;
+		grid-template-areas:
+		"logoContacto-grid navContacto-grid"
+		"tituloContacto-grid tituloContacto-grid"
+		"imgContacto-grid imgContacto-grid"
+		"formContacto-grid formContacto-grid"
+		"footerContacto-grid footerContacto-grid";
+		grid-template-columns: 50% 50%;
+		grid-template-rows: auto auto auto auto auto;
+	}
+	.logoContacto-grid {
+		grid-area: logoContacto-grid;
+		display: flex;
+		justify-content: center;
+	}
+	.navContacto-grid {
+		grid-area: navContacto-grid;
+	}
+	.tituloContacto-grid {
+		grid-area: tituloContacto-grid;
+		display: flex;
+		justify-content: center;
+		font-size: 30px;
+		font-style: italic;
+		color: darkred;
+	}
+	.imgContacto-grid {
+		grid-area: imgContacto-grid;
+		display: flex;
+		justify-content: center;
+	}
+	.formContacto-grid {
+		grid-area: formContacto-grid;
+		display: flex;
+		justify-content: center;
+	}
+	.footerContacto-grid {
+		grid-area: footerContacto-grid;
+	}
+	.nav__contacto{
+		display: inline-flex;
+		font-size: 40px;
+		justify-content: center;
+		font-style: italic;
+		margin: 10px;
+	}
+	.footerContacto{
+		display: flex;
+		justify-content: center;
+		font-style: italic;
+		color: darkred;
+	}
+}
