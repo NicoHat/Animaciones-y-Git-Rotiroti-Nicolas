@@ -1,8 +1,27 @@
+.logoIndex {
+	transform: scale(0.9, 0.9);
+}
+.logoProductos {
+	transform: scale(1,1);
+}
+.logoNosotros {
+	transform: scale(0.8, 0.8);
+}
+li:hover {
+	background-color: lightskyblue;
+	font-size: 45px;
+}
+input:focus {
+	width: 400px;
+	height: 25px;
+	font-size: 30px;
+}
+
 /* Grid y CSS de Index */
 /*Media query mobile Index */
 @media only screen and (min-width: 0px) and (max-width: 1023px) {
 	body {
-		background-color: lightcyan;
+		background-image: linear-gradient(turquoise, lightcyan)
 	}
 	.contenedorPadre-Index{
 		display: grid;
@@ -18,50 +37,43 @@
 		grid-area: logo-grid;
 		display: flex;
 		justify-content: center;
-	
 	}
 	.nav-grid {
 		grid-area: nav-grid;
-	
 	}
 	.promocion-grid {
 		grid-area: promocion-grid;
 		display: flex;
 		justify-content: safe center;
-	
 	}
 	.h3-grid {
 		grid-area: h3-grid;
 		font-style: italic;
 		font-size: 30px;
 		color: darkred;
-	
 	}
 	.ubicacion-grid {
 		grid-area: ubicacion-grid;
 		display: flex;
 		justify-content: center;
-	
 		font-size: 40px;
-		padding: 20px;
+		font-style: italic ;
+		color: darkred;
 	}
 	.mapa-grid {
 		grid-area: mapa-grid;
-	
 	}
 	.footer-grid {
 		grid-area: footer-grid;
 	
 		padding: 20px 0;
 	}
-
 	.navIndex {
 		display: inline-flex;
 		font-size: 40px;
 		justify-self: center;
 		font-style: italic;
 		margin: 10px;
-
 	}
 	.promocionIndex {
 		display: inline-flex;
@@ -81,7 +93,7 @@
 /*Media query desktop Index*/
 @media only screen and (min-width: 1024px) {
 	body {
-		background-color: lightsalmon;
+		background-image: linear-gradient(orange, lightsalmon)
 	}
 	.contenedorPadre-Index{
 		display: grid;
@@ -97,50 +109,44 @@
 		grid-area: logo-grid;
 		display: flex;
 		justify-content: center;
-		background-color: lightsalmon;
 	}
 	.nav-grid {
 		grid-area: nav-grid;
-		background-color: lightsalmon;
 	}
 	.promocion-grid {
 		grid-area: promocion-grid;
 		display: flex;
 		justify-content: safe center;
-		background: lightsalmon;
 	}
 	.h3-grid {
 		grid-area: h3-grid;
 		font-style: italic;
 		font-size: 30px;
 		color: darkred;
-		background-color: lightsalmon;
 	}
 	.ubicacion-grid {
 		grid-area: ubicacion-grid;
 		display: flex;
 		justify-content: center;
-		background-color: lightsalmon;
 		font-size: 40px;
-		padding: 20px;
+		font-style: italic ;
+		color: darkred;
 	}
 	.mapa-grid {
 		grid-area: mapa-grid;
-		background-color: lightsalmon;
+		
 	}
 	.footer-grid {
 		grid-area: footer-grid;
-		background-color: lightsalmon;
+		
 		padding: 20px 0;
 	}
-
 	.navIndex {
 		display: inline-flex;
 		font-size: 40px;
 		justify-self: center;
 		font-style: italic;
 		margin: 10px;
-
 	}
 	.promocionIndex {
 		display: inline-flex;
@@ -161,7 +167,7 @@
 /* Media query mobile productos */
 @media only screen and (min-width: 0px) and (max-width: 1023px) {
 	body {
-		background-color: lightcyan;
+		background-image: linear-gradient(turquoise, lightcyan);
 	}
 	.contenedorPadre-Productos {
 		display: grid;
@@ -225,12 +231,11 @@
 		font-style: italic;
 		color: darkred;
 	}
-
 }
 /*Media query desktop productos */
 @media only screen and (min-width: 1024px) and (max-width: 2000px) {
 	body {
-		background-color: lightsalmon;
+		background-image: linear-gradient(orange, lightsalmon);
 	}
 	.contenedorPadre-Productos {
 		display: grid;
@@ -249,7 +254,6 @@
 	}
 	.navProductos-grid {
 		grid-area: navProductos-grid;
-
 	}
 	.productos-grid {
 		grid-area: productos-grid;
@@ -300,7 +304,7 @@
 /* Media query mobile de promociones */
 @media only screen and (min-width: 0px) and (max-width: 1023px) {
 	body {
-		background-color: lightcyan;
+		background-image: linear-gradient(turquoise, lightcyan);
 	}
 	.contenedorPadre-Promociones {
 		display: grid;
@@ -363,7 +367,7 @@
 /* Media query desktop de promociones */
 @media only screen and (min-width: 1024px) and (max-width: 2000px) {
 	body {
-		background-color: lightsalmon;
+		background-image: linear-gradient(orange, lightsalmon);
 	}
 	.contenedorPadre-Promociones {
 		display: grid;
@@ -422,11 +426,12 @@
 		color: darkred;
 	}
 }	
-
-
 /* Grid y CSS de nosotros */
 /* Media query mobile de Nosotros */
 @media only screen and (min-width: 0px) and (max-width: 1023px) {
+	body {
+		background-image: linear-gradient(turquoise, lightcyan);
+	}
 	.contenedorPadre-Nosotros {
 		display: grid;
 		grid-template-areas:
@@ -472,7 +477,6 @@
 		font-family: Arial, Helvetica, Sans-serif;
 	  	font-weight: bold; 
 	 	font-style: italic;
-	 	background-color: lightcyan;
 	 	color: darkred;
 	}
 	.footerNosotros {
@@ -484,6 +488,9 @@
 }
 /* Media query desktop de Nosotros */
 @media only screen and (min-width: 1024px) {
+	body {
+		background-image: linear-gradient(orange, lightsalmon);
+	}
 	.contenedorPadre-Nosotros {
 		display: grid;
 		grid-template-areas:
@@ -529,7 +536,6 @@
 		font-family: Arial, Helvetica, Sans-serif;
 	  	font-weight: bold; 
 	 	font-style: italic;
-	 	background-color: lightsalmon;
 	 	color: darkred;
 	}
 	.footerNosotros {
@@ -542,6 +548,9 @@
 /* Grid y CSS de contacto */
 /* Media query mobile de Contacto */
 @media only screen and (min-width: 0px) and (max-width: 1023px){
+	body {
+		background-image: linear-gradient(turquoise, lightcyan);
+	}
 	.contenedorPadre-Contacto {
 		display: grid;
 		grid-template-areas:
@@ -550,7 +559,7 @@
 		"imgContacto-grid imgContacto-grid"
 		"formContacto-grid formContacto-grid"
 		"footerContacto-grid footerContacto-grid";
-		grid-template-columns: 50% 50%;
+		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: auto auto auto auto auto;
 	}
 	.logoContacto-grid {
@@ -598,6 +607,9 @@
 }
 
 @media only screen and (min-width: 1024px) {
+	body {
+		background-image: linear-gradient(orange, lightsalmon);
+	}
 	.contenedorPadre-Contacto {
 		display: grid;
 		grid-template-areas:
@@ -606,7 +618,7 @@
 		"imgContacto-grid imgContacto-grid"
 		"formContacto-grid formContacto-grid"
 		"footerContacto-grid footerContacto-grid";
-		grid-template-columns: 50% 50%;
+		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: auto auto auto auto auto;
 	}
 	.logoContacto-grid {
@@ -651,4 +663,10 @@
 		font-style: italic;
 		color: darkred;
 	}
+}
+li {
+	
+}
+li:hover {
+	background-color: lightskyblue;
 }
